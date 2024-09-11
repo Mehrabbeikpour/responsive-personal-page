@@ -693,10 +693,13 @@ section {
     background-color: rgba($color: #000000, $alpha: 0.9);
     ul {
       li {
-        text-decoration: none;
         list-style: none;
-        color: #fff;
         margin: 5rem 0;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
       }
     }
   }
