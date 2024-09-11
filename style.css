@@ -448,6 +448,340 @@ header nav .list-darkmode-menu .hamburger.active .bar {
   box-shadow: 0 0 40px var(--color);
 }
 
+.about .about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+.about .about-wrapper .about-left {
+  flex: 1;
+}
+.about .about-wrapper .about-left .about-img img {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 50%;
+  box-shadow: 0 0 40px var(--color);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.about .about-wrapper .about-left .about-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 80px var(--color);
+}
+.about .about-wrapper .about-right {
+  flex: 2;
+}
+.about .about-wrapper .about-right .about-info h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: var(--first);
+  margin-bottom: 10px;
+}
+.about .about-wrapper .about-right .about-info h2 span {
+  color: var(--color);
+}
+.about .about-wrapper .about-right .about-info h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--first);
+  margin-bottom: 25px;
+}
+.about .about-wrapper .about-right .about-info p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--first);
+  line-height: 1.4em;
+  margin-bottom: 25px;
+}
+.about .about-wrapper .about-right .about-info button {
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: 25px;
+  color: var(--color);
+  background: transparent;
+  border: 3px solid var(--color);
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.about .about-wrapper .about-right .about-info button:hover {
+  color: #fff;
+  background: var(--color);
+  box-shadow: 0 0 0.7rem var(--color);
+  transform: translateY(-7px);
+}
+
+.services h2 {
+  font-size: 2.8em;
+  text-align: center;
+  font-weight: bold;
+  color: var(--first);
+  margin-bottom: 1.5em;
+}
+.services h2 span {
+  color: var(--color);
+}
+.services .services-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.services .services-box .box {
+  background-color: var(--box-bg);
+  text-align: center;
+  width: 375px;
+  padding: 35px;
+  border-radius: 15px;
+  border: 2px solid var(--box-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.8em;
+  transition: 0.4s ease;
+}
+.services .services-box .box:hover {
+  scale: 1.03;
+  border: 2px solid var(--color);
+}
+.services .services-box .box .icon {
+  color: var(--color);
+  font-size: 3em;
+}
+.services .services-box .box h3 {
+  color: #fff;
+  font-size: 1.8em;
+}
+.services .services-box .box p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  color: #fff;
+}
+.services .services-box .box .services-btn {
+  width: 300px;
+  margin-top: 10px;
+}
+.services .services-box .box .services-btn button {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 25px;
+  color: var(--color);
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid var(--color);
+  transition: 0.3s ease;
+}
+.services .services-box .box .services-btn button:hover {
+  color: #fff;
+  transform: translateY(-7px);
+  background: var(--color);
+  box-shadow: 0 0 10px var(--color);
+}
+
+.portfolio h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  color: var(--first);
+  margin-bottom: 1.5rem;
+}
+.portfolio h2 span {
+  color: var(--color);
+}
+.portfolio .portfolio-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+.portfolio .portfolio-wrapper .portfolio-box {
+  position: relative;
+  width: 375px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.portfolio .portfolio-wrapper .portfolio-box img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  transition: 0.5s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.portfolio .portfolio-wrapper .portfolio-box:hover img {
+  transform: scale(1.1);
+}
+.portfolio .portfolio-wrapper .portfolio-box .portfolio-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 1.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+.portfolio .portfolio-wrapper .portfolio-box .portfolio-info h4 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.portfolio .portfolio-wrapper .portfolio-box .portfolio-info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4rem;
+  margin: 10px 15px 15px;
+  color: #fff;
+}
+.portfolio .portfolio-wrapper .portfolio-box .portfolio-info a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background: #fff;
+  border-radius: 50%;
+}
+.portfolio .portfolio-wrapper .portfolio-box .portfolio-info a i {
+  font-size: 1rem;
+  color: #000;
+}
+.portfolio .portfolio-wrapper .portfolio-box:hover .portfolio-info {
+  transform: translateY(0);
+}
+
+.contact h2 {
+  font-size: 2.8em;
+  text-align: center;
+  color: var(--first);
+  margin-bottom: 1em;
+}
+.contact h2 span {
+  color: var(--color);
+}
+.contact form {
+  max-width: 40em;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3em;
+}
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact form .input-box input {
+  width: 49%;
+  padding: 1em;
+  font-size: 16px;
+  color: var(--first);
+  background: var(--clr-bg);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+.contact form .input-box input::-moz-placeholder {
+  color: var(--place-clr);
+}
+.contact form .input-box input::placeholder {
+  color: var(--place-clr);
+}
+.contact form textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  color: var(--first);
+  background: var(--clr-bg);
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+.contact form textarea::-moz-placeholder {
+  color: var(--place-clr);
+}
+.contact form textarea::placeholder {
+  color: var(--place-clr);
+}
+.contact form button {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 24px;
+  margin-top: 1rem;
+  border-radius: 30px;
+  background: var(--color);
+  border: 3px solid var(--color);
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.contact form button:hover {
+  color: var(--color);
+  background: transparent;
+  transform: translateY(-7px);
+  box-shadow: 0 0 1rem var(--color);
+}
+
+.footer {
+  padding: 1.5em 9%;
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-bg);
+}
+.footer .footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .footer-wrapper .footer-info p {
+  margin-left: 25rem;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  color: var(--color);
+}
+.footer .footer-wrapper .iconTop a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0.7rem;
+  border-radius: 10px;
+  background-color: var(--color);
+  transition: 0.4s;
+}
+.footer .footer-wrapper .iconTop a:hover {
+  box-shadow: 0 0 0.7rem var(--color);
+}
+.footer .footer-wrapper .iconTop a i {
+  font-size: 1em;
+  color: #fff;
+}
+
 /* ====lapTop screen==== */
 @media screen and (max-width: 992px) {
   .container {
