@@ -4,253 +4,486 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ====Fontawsome link ==== -->
+    <!-- =====font awsome cdnjs==== -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-
-    <!-- ===== Fav icon==== -->
-    <link
-      rel="shortcut icon"
-      href="./assets/Image/favicon.ico"
-      type="image/x-icon"
-    />
-
-    <!-- ====css link==== -->
+    <!-- ========style.css====== -->
     <link rel="stylesheet" href="./style.css" />
-    <title>responsive personal page</title>
+    <title>responsive page with sass</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav>
-          <div class="logo">
-            <a href="#">Mehrab <span>Beikpour</span> </a>
-          </div>
-          <div class="list-darkmode-menu">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-            <label class="mode">
-              <input type="checkbox" checked="checked" id="darkModeButton" />
-              <i class="fa-solid fa-moon"></i>
-              <i class="fa-solid fa-sun"></i>
-            </label>
-            <!-- <button class="hamburger">
-              <div class="bar"></div>
-            </button> -->
-          </div>
-        </nav>
-      </div>
-    </header>
+    <!-- ======Navbar section start===== -->
+    <nav class="navbar">
+      <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="#about"><i class="fas fa-user"></i><span>About</span></a>
+      <a href="#blogs"><i class="fas fa-blog"></i><span>Blogs</span></a>
+      <a href="#portfolio"
+        ><i class="fas fa-briefcase"></i><span>Portfolio</span></a
+      >
+      <a href="#contact"><i class="fas fa-book"></i><span>Content</span></a>
+    </nav>
+    <div class="off-screen-menu">
+      <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>blogs</li>
+        <li>portfolio</li>
+        <li>contact</li>
+      </ul>
+    </div>
 
-    <!-- ====start home section==== -->
+    <div class="ham-menu" id="nav"><span></span><span></span><span></span></div>
+
+    <!-- ======Navbar section end===== -->
+
+    <!-- ==========home section start========= -->
     <section class="home" id="home">
-      <div class="container">
-        <div class="home_info">
-          <div class="left">
-            <h3>Hello friends, I'm</h3>
-            <h1>Mehrab beikpour</h1>
-            <h4>and I'm <span class="multiple">Front-end Developer</span></h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores eos est magni laboriosam nesciunt dicta modi
-              consequuntur! Sequi, eos ab!
-            </p>
-            <div class="social">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <div class="image">
+        <img src="./assets/Image/profile.jpg" alt="user" />
+      </div>
+      <div class="content">
+        <h3>hi , i am <span>mehrab beikpour</span></h3>
+        <span>front-end developer</span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
+          dolore dolores laboriosam nulla, molestiae eos quaerat reiciendis
+          quidem,
+        </p>
+        <a href="#" class="btn">about me <i class="fas fa-user"></i></a>
+      </div>
+    </section>
+    <!-- ==========home section end========= -->
+    <!-- ====about section start==== -->
+
+    <section class="about" id="about">
+      <h1 class="heading">about <span>me</span></h1>
+      <div class="row">
+        <div class="info-container">
+          <h1>personal info</h1>
+
+          <div class="box-container">
+            <div class="box">
+              <h3><span>name</span> : mehrab beikpour</h3>
+              <h3><span>age</span> : 35</h3>
+              <h3><span>email</span> : beikpour.merhab@gmail.com</h3>
+              <h3><span>address</span> : iran, tehran, 44444</h3>
+            </div>
+
+            <div class="box">
+              <h3><span>frelance</span> : available</h3>
+              <h3><span>skill</span> : front-end</h3>
+              <h3><span>exprience</span> : 2years</h3>
+              <h3><span>language</span> : english,persian</h3>
             </div>
           </div>
-          <div class="right">
-            <div class="profil_img">
-              <img src="./assets/Image/profile.jpg" alt="" />
-            </div>
+          <a href="#" class="btn"
+            >download CV <i class="fas fa-download"></i
+          ></a>
+        </div>
+
+        <div class="count-container">
+          <div class="box">
+            <h3>2+</h3>
+            <p>years of experiance</p>
+          </div>
+
+          <div class="box">
+            <h3>450+</h3>
+            <p>hapy clience</p>
+          </div>
+
+          <div class="box">
+            <h3>390+</h3>
+            <p>project complated</p>
+          </div>
+
+          <div class="box">
+            <h3>10+</h3>
+            <p>awords won</p>
           </div>
         </div>
       </div>
     </section>
+    <!-- ====about section end==== -->
 
-    <!-- ====End home section==== -->
+    <!-- ====skill start==== -->
 
-    <!-- ====start  about section ==== -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-wrapper">
-          <div class="about-left">
-            <div class="about-img">
-              <img src="./assets/Image/profile.jpg" alt="" />
-            </div>
-          </div>
-          <div class="about-right">
-            <div class="about-info">
-              <h2>About <span>me</span></h2>
-              <h3>Front-End Developer</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi,
-                veniam rem asperiores consequuntur consequatur maiores
-                exercitationem tempora dolorem aliquam ex itaque magni expedita
-                placeat facilis, dolorum, voluptatum reiciendis! Recusandae,
-                voluptatem expedita consectetur ducimus soluta facilis eos
-                blanditiis architecto deserunt delectus amet inventore officia,
-                consequuntur magni eaque sequi. Accusantium, cumque iusto?
-              </p>
-              <button>Read More</button>
-            </div>
-          </div>
+    <section class="skills" id="skills">
+      <h1 class="heading"><span>my</span>skill</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./assets/Image/icon-1.webp" alt="#" />
+          <h3>html</h3>
+        </div>
+        <div class="box">
+          <img src="./assets/Image/icon-2.png" alt="#" />
+          <h3>react</h3>
+        </div>
+        <div class="box">
+          <img src="./assets/Image/icon-3.webp" alt="#" />
+          <h3>css</h3>
+        </div>
+        <div class="box">
+          <img src="./assets/Image/icon-4.png" alt="#" />
+          <h3>sass</h3>
+        </div>
+        <div class="box">
+          <img src="./assets/Image/icon-5.png" alt="#" />
+          <h3>bootstrap</h3>
+        </div>
+        <div class="box">
+          <img src="./assets/Image/icon-6.png" alt="#" />
+          <h3>javascript</h3>
         </div>
       </div>
     </section>
-    <!-- ====start  about section==== -->
 
-    <!-- ====start  services section==== -->
-    <section id="services" class="services">
-      <div class="container">
-        <h2>Our <span>Services</span></h2>
-        <div class="services-box">
-          <div class="box">
-            <div class="icon">
-              <i class="fa-solid fa-code"></i>
-            </div>
-            <h3>Web Development</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
-              suscipit doloribus nulla alias repudiandae praesentium officia
-              ipsa placeat cumque omnis?
-            </p>
-            <div class="services-btn">
-              <button>Read More</button>
-            </div>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fa-solid fa-pen-fancy"></i>
-            </div>
-            <h3>Graphic Design</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
-              suscipit doloribus nulla alias repudiandae praesentium officia
-              ipsa placeat cumque omnis?
-            </p>
-            <div class="services-btn">
-              <button>Read More</button>
-            </div>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fa-solid fa-chart-column"></i>
-            </div>
-            <h3>digital marketing</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
-              suscipit doloribus nulla alias repudiandae praesentium officia
-              ipsa placeat cumque omnis?
-            </p>
-            <div class="services-btn">
-              <button>Read More</button>
-            </div>
-          </div>
+    <!-- ====skill end==== -->
+
+    <!-- education section start -->
+
+    <section class="education">
+      <h1 class="heading"><span>my</span>education</h1>
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2015-2016 </span>
+          <h3>front-end developer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            omnis voluptate at molestias facilis dolores neque reprehenderit
+            repudiandae maxime. Sit.
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2016-2017 </span>
+          <h3>front-end developer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            omnis voluptate at molestias facilis dolores neque reprehenderit
+            repudiandae maxime. Sit.
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2017-2018 </span>
+          <h3>front-end developer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            omnis voluptate at molestias facilis dolores neque reprehenderit
+            repudiandae maxime. Sit.
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2018-2019 </span>
+          <h3>front-end developer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            omnis voluptate at molestias facilis dolores neque reprehenderit
+            repudiandae maxime. Sit.
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2020-2021 </span>
+          <h3>front-end developer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            omnis voluptate at molestias facilis dolores neque reprehenderit
+            repudiandae maxime. Sit.
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <span>2021-2022 </span>
+          <h3>front-end developer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            omnis voluptate at molestias facilis dolores neque reprehenderit
+            repudiandae maxime. Sit.
+          </p>
         </div>
       </div>
     </section>
-    <!-- ====end  services section==== -->
+    <!-- education section start -->
 
-    <!-- ====portfolio section start==== -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <h2>Latest <span>Projects</span></h2>
-        <div class="portfolio-wrapper">
-          <div class="portfolio-box">
-            <img src="./assets/Image/blog (2).webp" alt="" />
-            <div class="portfolio-info">
-              <h4>web design</h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
-                quisquam ?
-              </p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
+    <!-- blog section start -->
+
+    <section class="blogs" id="blogs">
+      <h1 class="heading"><span>my</span> Blogs</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="./assets/Image/blog (1).jpg" alt="" />
           </div>
-          <div class="portfolio-box">
-            <img src="./assets/Image/blog (1).webp" alt="" />
-            <div class="portfolio-info">
-              <h4>Front-End Development</h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
-                quisquam ?
-              </p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-calender"></i>21st may, 2021</a>
+              <a href="#"><i class="fas fa-user"></i>by admin</a>
             </div>
+            <h3>blog title goes here</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              facilis.
+            </p>
+            <a href="#" class="btn">read more <i class="fas fa-link"></i></a>
           </div>
-          <div class="portfolio-box">
+        </div>
+
+        <div class="box">
+          <div class="image">
             <img src="./assets/Image/blog (1).png" alt="" />
-            <div class="portfolio-info">
-              <h4>web design</h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
-                quisquam ?
-              </p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-calender"></i>21st may, 2021</a>
+              <a href="#"><i class="fas fa-user"></i>by admin</a>
             </div>
+            <h3>blog title goes here</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              facilis.
+            </p>
+            <a href="#" class="btn">read more <i class="fas fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./assets/Image/blog (1).webp" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-calender"></i>21st may, 2021</a>
+              <a href="#"><i class="fas fa-user"></i>by admin</a>
+            </div>
+            <h3>blog title goes here</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              facilis.
+            </p>
+            <a href="#" class="btn">read more <i class="fas fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./assets/Image/blog (2).webp" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-calender"></i>21st may, 2021</a>
+              <a href="#"><i class="fas fa-user"></i>by admin</a>
+            </div>
+            <h3>blog title goes here</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              facilis.
+            </p>
+            <a href="#" class="btn">read more <i class="fas fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./assets/Image/blog-1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-calender"></i>21st may, 2021</a>
+              <a href="#"><i class="fas fa-user"></i>by admin</a>
+            </div>
+            <h3>blog title goes here</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              facilis.
+            </p>
+            <a href="#" class="btn">read more <i class="fas fa-link"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./assets/Image/blog-2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-calender"></i>21st may, 2021</a>
+              <a href="#"><i class="fas fa-user"></i>by admin</a>
+            </div>
+            <h3>blog title goes here</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              facilis.
+            </p>
+            <a href="#" class="btn">read more <i class="fas fa-link"></i></a>
           </div>
         </div>
       </div>
     </section>
-    <!-- ====portfolio section end==== -->
 
-    <!-- ====contact section start==== -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>Contact <span>Me!</span></h2>
-        <form>
-          <div class="input-box">
-            <input type="text" placeholder="full name" />
-            <input type="email" placeholder="email address" />
+    <!-- blog section end -->
+
+    <!-- portfolio section start -->
+
+    <section class="portfolio" id="portfolio">
+      <h1 class="heading"><span>my</span> work</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="./assets/Image/img-1.jpg" alt="#" />
+          <div class="content">
+            <h3>project 01</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              inventore!
+            </p>
+            <a href="#">read more</a>
           </div>
-          <div class="input-box">
-            <input type="number" placeholder="mobile number" />
-            <input type="text" placeholder="email subject" />
+        </div>
+
+        <div class="box">
+          <img src="./assets/Image/img-2.jpg" alt="#" />
+          <div class="content">
+            <h3>project 02</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              inventore!
+            </p>
+            <a href="#">read more</a>
           </div>
+        </div>
+
+        <div class="box">
+          <img src="./assets/Image/img-3.jpg" alt="#" />
+          <div class="content">
+            <h3>project 01</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              inventore!
+            </p>
+            <a href="#">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./assets/Image/img-4.jpg" alt="#" />
+          <div class="content">
+            <h3>project 01</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              inventore!
+            </p>
+            <a href="#">read more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/Image/img-5.jpg" alt="#" />
+          <div class="content">
+            <h3>project 01</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              inventore!
+            </p>
+            <a href="#">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./assets/Image/img-6.jpg" alt="#" />
+          <div class="content">
+            <h3>project 01</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              inventore!
+            </p>
+            <a href="#">read more</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="btn">load more <i class="fas fa-redo"></i></a>
+    </section>
+
+    <!-- content section start -->
+
+    <section class="content" id="contact">
+      <h1 class="heading">content <span>me</span></h1>
+      <div class="row">
+        <div class="info-container">
+          <h1>get in tuch</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            earum doloremque tempore voluptas. Unde quo inventore, veritatis
+            ipsum odio molestias.
+          </p>
+
+          <div class="box-container">
+            <div class="box">
+              <i class="fas fa-map"></i>
+              <div class="info">
+                <h3>adress :</h3>
+                <p>tehran,iran</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <h3>email :</h3>
+                <p>beikpour.mehrab@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <i class="fas fa-phone"></i>
+              <div class="info">
+                <h3>tel :</h3>
+                <p>09035677177</p>
+              </div>
+            </div>
+
+            <div class="share">
+              <a href="" class="fab fa-facebook-f"></a>
+              <a href="" class="fab fa-twitter"></a>
+              <a href="" class="fab fa-instagram"></a>
+              <a href="" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="your name" />
+            <input type="number" placeholder="your number" />
+          </div>
+
+          <div class="inputBox">
+            <input type="email" placeholder="your email" />
+            <input type="number" placeholder="your subject" />
+          </div>
+
           <textarea
             name=""
+            placeholder="your message"
             id=""
             cols="30"
             rows="10"
-            placeholder="your message"
           ></textarea>
-          <button type="submit">send message</button>
+
+          <input type="submit" value="send message" class="btn" />
         </form>
       </div>
     </section>
-    <!-- ====contact section end==== -->
-
-    <!-- ====footer start==== -->
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-wrapper">
-          <div class="footer-info">
-            <p>Copyright &copy; 2024 by how to deb | all rights reserved</p>
-          </div>
-          <div class="iconTop">
-            <a href="#">
-              <i class="fa-solid fa-arrow-up"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- ====footer end==== -->
 
     <script src="./script.js"></script>
   </body>
